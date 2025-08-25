@@ -127,7 +127,7 @@ class ApelClient:
         headers = {
             "User-Agent": USER_AGENT,
             "accept": "*/*",
-            "authorization": self.access_token,
+            # "authorization": self.access_token,
             "accept-language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
             "content-type": "application/json",
             "origin": "https://apelgamo.com",
@@ -141,8 +141,8 @@ class ApelClient:
             "sec-fetch-site": "cross-site",
         }
         params = {
-            "id": self.username,
-            "accessToken": self.access_token,
+            # "id": self.username,
+            # "accessToken": self.access_token,
             "brand": brand,
             "branch": branch,
             "hall": hall,

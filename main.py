@@ -24,15 +24,15 @@ async def main_loop(_):
 
     client = ApelClient()
 
-    login_ts = 0
+    # login_ts = 0
     origin_hash = ""
 
     while True:
         try:
-            if time.time() - login_ts > 1800:
-                login_ts = time.time()
-                client.login(username, password)
-                await asyncio.sleep(10)
+            # if time.time() - login_ts > 1800:
+            #     login_ts = time.time()
+            #     client.login(username, password)
+            #     await asyncio.sleep(10)
 
             new_slots = client.search(
                 brand=os.getenv("SEARCH_BRAND"),
