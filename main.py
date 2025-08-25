@@ -29,7 +29,7 @@ async def main_loop(_):
 
     while True:
         try:
-            if login_ts - time.time() > 1800:
+            if time.time() - login_ts > 1800:
                 login_ts = time.time()
                 client.login(username, password)
                 await asyncio.sleep(10)
